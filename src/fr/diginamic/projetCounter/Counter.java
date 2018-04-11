@@ -1,3 +1,4 @@
+package fr.diginamic.projetCounter;
 
 public class Counter {
 	private int increment;
@@ -26,7 +27,6 @@ public class Counter {
 	}
 	
 	public Counter() {
-		this.valeur = 0;
-		this.increment = 1;
+		this(0,1);
 	}
 }

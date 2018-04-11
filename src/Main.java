@@ -1,3 +1,5 @@
+import fr.diginamic.projetCounter.Counter;
+import fr.diginamic.projetCounter.CounterPair;
 
 public class Main {
 
@@ -22,5 +24,14 @@ public class Main {
 		int c = counter3.getValue();
 		System.out.println(c);
 		System.out.println(counter3.toString());
+		
+		System.out.println("Test du compteur pair");
+		CounterPair counter4 = new CounterPair();
+		System.out.println(counter4.toString());
+		counter4.inc();
+		System.out.println(counter4.toString());
+		System.out.println(counter.equals(counter4));
+		counter.inc();
+		System.out.println(counter.equals(counter4));
 	}
 }
