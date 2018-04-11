@@ -1,14 +1,14 @@
 
 public class Counter {
-	private int increment = 1;
-	private int valeur = 0;
+	private int increment;
+	private int valeur;
 	
 	public int getValue() {
 		return this.valeur;
 	}
 	
 	public void inc() {
-		this.valeur++;
+		this.valeur = this.valeur + increment;
 	}
 	
 	public String toString() {
@@ -20,5 +20,13 @@ public class Counter {
 		return this.valeur == counter.valeur;
 	}
 	
+	public Counter(int val, int inc) {
+		this.valeur = val;
+		this.increment = inc;
+	}
 	
+	public Counter() {
+		this.valeur = 0;
+		this.increment = 1;
+	}
 }
