@@ -19,4 +19,6 @@ public class Counter {
 	public boolean equals(Counter counter) {
 		return this.valeur == counter.valeur;
 	}
+	
+	
 }
