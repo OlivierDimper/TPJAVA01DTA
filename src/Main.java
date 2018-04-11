@@ -33,5 +33,7 @@ public class Main {
 		System.out.println(counter.equals(counter4));
 		counter.inc();
 		System.out.println(counter.equals(counter4));
+		
+		System.out.println(Counter.getGlobalCounter());
 	}
 }
